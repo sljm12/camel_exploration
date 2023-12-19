@@ -54,7 +54,11 @@
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-jdbc</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-http</artifactId>			
+		</dependency>
+
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>

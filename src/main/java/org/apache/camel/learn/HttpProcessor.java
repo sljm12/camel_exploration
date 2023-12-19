@@ -8,8 +8,7 @@ public class HttpProcessor implements Processor{
 
 	@Override
 	public void process(Exchange exchange) throws Exception {
-		HttpMessage message = exchange.getIn().getBody(HttpMessage.class);
-		String query = message.getRequest().getQueryString();
+		HttpMessage message = exchange.getIn().getBody(HttpMessage.class);		
 		String a = message.getHeader("a", String.class);
 		String b = message.getHeader("b",String.class);
 		System.out.println(a +" "+ b);
